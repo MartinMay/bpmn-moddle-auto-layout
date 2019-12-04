@@ -1,4 +1,6 @@
 node_modules/
 test/generated
+model.bpmn
 test.bpmn
 test.js
+output.bpmn
