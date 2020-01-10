@@ -52,41 +52,37 @@ describe('bpmn-auto-layout', function() {
       await test('simple.bpmn');
     });
 
+    it('multiple start subprocess', async function() {
+      await test('multiple-start-subprocess.bpmn');
+    });
+
+    it('vertical padding', async function() {
+      await test('vertical-padding.bpmn');
+    });
 
     it('process diagram', async function() {
       await test('process-diagram.bpmn');
     });
 
-
     it('parallel flows', async function() {
       await test('parallel-flows.bpmn');
     });
-
-
-    it('nested gateways', async function() {
-      await test('nested-gateways.bpmn');
-    });
-
 
     it('multiple start events', async function() {
       await test('multiple-start-events.bpmn');
     });
 
-
     it('nested sub-process', async function() {
       await test('nested-sub-processes.bpmn');
     });
-
 
     it.skip('collaboration and message flows', async function() {
       await test('collaboration-message-flows.bpmn');
     });
 
-
     it.skip('boundary events', async function() {
       await test('boundary-events.bpmn');
     });
-
 
     it.skip('event sub-process', async function() {
       await test('event-sub-process.bpmn');
@@ -118,7 +114,7 @@ describe('bpmn-auto-layout', function() {
       };
     });
 
-    const config = JSON.stringify(generated, null, 2);
+    const config = JSON.stringify(generated);
 
     const html = `
 <html>
