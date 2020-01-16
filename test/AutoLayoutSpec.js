@@ -48,7 +48,7 @@ describe('bpmn-auto-layout', function() {
 
   describe('should layout', function() {
 
-    it('simple', async function() {
+    it.skip('simple', async function() {
       await test('simple.bpmn');
     });
 
@@ -56,7 +56,7 @@ describe('bpmn-auto-layout', function() {
       await test('multiple-start-subprocess.bpmn');
     });
 
-    it('vertical padding', async function() {
+    it.skip('vertical padding', async function() {
       await test('vertical-padding.bpmn');
     });
 
@@ -64,15 +64,15 @@ describe('bpmn-auto-layout', function() {
       await test('process-diagram.bpmn');
     });
 
-    it('parallel flows', async function() {
+    it.skip('parallel flows', async function() {
       await test('parallel-flows.bpmn');
     });
 
-    it('multiple start events', async function() {
+    it.skip('multiple start events', async function() {
       await test('multiple-start-events.bpmn');
     });
 
-    it('nested sub-process', async function() {
+    it.skip('nested sub-process', async function() {
       await test('nested-sub-processes.bpmn');
     });
 
